@@ -1,0 +1,107 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Loja Virtual COMPIA</title>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body>
+        <header> 
+            {% include 'partials/header.html' %}
+        </header>
+        <main>
+           <section id="cards" class="grid grid-cols-3 gap-6">
+               <div class="card bg-base-100 w-96 shadow-sm">
+                    <figure>
+                        <img class="h-48 w-full object-cover"
+                        src= "{% static 'img/ia-ampliada_ebook_bf0d09cd-51af-4ad9-8a6d-5d4484627894_large.webp' %}"
+                        alt="Tênis" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Inteligência Artificial Ampliada</h2>
+                        <p>Livro sobre inteligência artificial e suas aplicações.</p>
+                        <div class="card-actions justify-end">
+                        <button class="btn btn-primary"><a href="{% url 'product' %}">Comprar</a></button>
+                        </div>
+                    </div>
+                    </div>
+                <div class="card bg-base-100 w-96 shadow-sm">
+                    <figure>
+                        <img class="h-48 w-full object-cover"
+                        src= "{% static 'img/icone.jpeg' %}"
+                        alt="Tênis" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Ebook Principios da IA</h2>
+                        <p>Conceitos básicos sobre IA e principios éticos</p>
+                        <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                    </div>
+                 <div class="card bg-base-100 w-96 shadow-sm">
+                    <figure>
+                        <img class="h-48 w-full object-cover"
+                        src= "{% static 'img/images.jpeg' %}"
+                        alt="Tênis" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Kit Inteligência Artificial</h2>
+                        <p>Conjunto de materiais para aprendizado de IA para iniciante.</p>
+                        <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-96 shadow-sm">
+                    <figure>
+                        <img class="h-48 w-full object-cover"
+                        src= "{% static 'img/ia-ampliada_ebook_bf0d09cd-51af-4ad9-8a6d-5d4484627894_large.webp' %}"
+                        alt="Tênis" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Inteligência Artificial Ampliada</h2>
+                        <p>Livro sobre inteligência artificial e suas aplicações.</p>
+                        <div class="card-actions justify-end">
+                        <button class="btn btn-primary"><a href="{% url 'product' %}">Comprar</a></button>
+                        </div>
+                    </div>
+                    </div>
+                <div class="card bg-base-100 w-96 shadow-sm">
+                    <figure>
+                        <img class="h-48 w-full object-cover"
+                        src= "{% static 'img/icone.jpeg' %}"
+                        alt="Tênis" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Ebook Principios da IA</h2>
+                        <p>Conceitos básicos sobre IA e principios éticos</p>
+                        <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                    </div>
+                 <div class="card bg-base-100 w-96 shadow-sm">
+                    <figure>
+                        <img class="h-48 w-full object-cover"
+                        src= "{% static 'img/images.jpeg' %}"
+                        alt="Tênis" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Kit Inteligência Artificial</h2>
+                        <p>Conjunto de materiais para aprendizado de IA para iniciante.</p>
+                        <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                 </div>
+            </section>
+        </main>
+        <footer >
+            {% include 'partials/footer.html' %}
+        </footer>
+    </body>
+</html>

@@ -6,5 +6,9 @@ def home(request):
 
 def login(request):
     return render(request, 'login.html')
+
 def product(request):
     return render(request, 'product.html')
+
+def books(request):
+    return render(request, 'books.html')
