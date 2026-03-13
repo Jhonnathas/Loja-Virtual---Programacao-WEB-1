@@ -12,3 +12,6 @@ def product(request):
 
 def books(request):
     return render(request, 'books.html')
+
+def payment(request):
+    return render(request, 'payment.html')

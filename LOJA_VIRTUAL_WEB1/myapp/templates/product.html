@@ -16,31 +16,31 @@
              <div class="card lg:card-side bg-base-100 shadow-sm">
                 <figure>
                     <img
-                    src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
+                    src="{% static 'img/ia-ampliada_ebook_bf0d09cd-51af-4ad9-8a6d-5d4484627894_large.webp' %}"
                     alt="Album" />
                 </figure>
                 <div class="card-body">
-                    <h2 class="card-title">New album is released!</h2>
-                    <p>Click the button to listen on Spotiwhy app.</p>
-                    <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Listen</button>
+                    <h2 class="card-title">Inteligência Artificial Ampliada</h2>
+                    <p>Livro sobre inteligência artificial e suas aplicações. Escrito em 2023 por Fabricio Carraro um especialista na área. O Livro 
+                    é uma abordagem profunda sobre os conceitos avançados de IA, incluindo aprendizado profundo, redes neurais e suas aplicações 
+                    práticas em diversos setores. Ideal para profissionais e entusiastas que desejam expandir seus conhecimentos em IA.</p>
+                    </p>
+                    <p>Autor: Fabricio Carraro</p>
+                    <p>Ano: 2023</p>
+                    <p>Preço: R$ 49,90</p>
+                    <div class="rating">
+                        <div class="mask mask-star" aria-label="1 star"></div>
+                        <div class="mask mask-star" aria-label="2 star"></div>
+                        <div class="mask mask-star" aria-label="3 star"></div>
+                        <div class="mask mask-star" aria-label="4 star" aria-current="true"></div>
+                        <div class="mask mask-star" aria-label="5 star"></div>
+                    </div>
+                    <div class="card-actions justify">
+                        {% include 'partials/buy_button.html' %}
+                        <button class="btn btn-secondary">Adicionar ao carrinho</button>
                     </div>
                 </div>
-                </div>
-        <div class="card bg-base-100 w-96 shadow-sm">
-                    <figure>
-                        <img class="h-48 w-full object-cover"
-                        src= "{% static 'img/ia-ampliada_ebook_bf0d09cd-51af-4ad9-8a6d-5d4484627894_large.webp' %}"
-                        alt="Tênis" />
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Inteligência Artificial Ampliada</h2>
-                        <p>Livro sobre inteligência artificial e suas aplicações.</p>
-                        <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Comprar</button>
-                        </div>
-                    </div>
-                    </div>    
+                </div>   
         </main>
          <footer >
                 {% include 'partials/footer.html' %}

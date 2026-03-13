@@ -24,9 +24,7 @@
                     <div class="card-body">
                         <h2 class="card-title">Inteligência Artificial Ampliada</h2>
                         <p>Livro sobre inteligência artificial e suas aplicações.</p>
-                        <div class="card-actions justify-end">
-                        <button class="btn btn-primary"><a href="{% url 'product' %}">Comprar</a></button>
-                        </div>
+                        {% include 'partials/button_details.html' %}
                     </div>
                     </div>
                 <div class="card bg-base-100 w-96 shadow-sm">
@@ -38,9 +36,7 @@
                     <div class="card-body">
                         <h2 class="card-title">Ebook Principios da IA</h2>
                         <p>Conceitos básicos sobre IA e principios éticos</p>
-                        <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Comprar</button>
-                        </div>
+                        {% include 'partials/button_details.html' %}
                     </div>
                     </div>
                  <div class="card bg-base-100 w-96 shadow-sm">
