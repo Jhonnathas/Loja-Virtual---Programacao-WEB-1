@@ -15,3 +15,15 @@ def books(request):
 
 def payment(request):
     return render(request, 'payment.html')
+
+def about_us(request):
+    return render(request, 'about_us.html')
+
+def contact(request):
+    return render(request, 'Contact.html')
+
+def use_terms(request):
+    return render(request, 'use_terms.html')
+
+def privacy_policy(request):
+    return render(request, 'privacy_policy.html')

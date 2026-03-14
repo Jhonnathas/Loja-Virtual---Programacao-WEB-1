@@ -1,4 +1,4 @@
- {% load static %}
+{% load static %}
 <!doctype html>
 <html lang="pt-br">
     <head>
@@ -11,14 +11,17 @@
     <body class="min-h-screen flex flex-col">
         <header> 
             {% include 'partials/header.html' %}
-        
         </header>
-        <main class="flex-grow">
-            <h1 class="text-3xl font-bold mb-6">Pagamento</h1>
-            <p>Esta é a página de pagamento. Aqui você pode finalizar sua compra e escolher a forma de pagamento.</p>
-            <p>Em breve, esta página estará funcional para processar pagamentos de forma segura e eficiente.</p>
-        <footer>
+          <main class="flex-grow flex justify-center">
+            <div>
+            <h1 class="text-3xl font-bold mb-6 p-4">Contato</h1>
+            <p class="text-lg p-4">Telefone: (83) 1234-5678</p>
+            <p class="text-lg p-4">Email: COMPIA@lojavirtual.com</p>
+            <p class="text-lg p-4">Endereço: Rua Jonh Person, 1313 - Campina Grande, PB</p>
+            </div>
+         </main>
+            <footer >
                 {% include 'partials/footer.html' %}
-        </footer>
+            </footer>
     </body>
 </html>

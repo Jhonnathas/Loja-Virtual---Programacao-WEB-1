@@ -1,0 +1,35 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Loja Virtual COMPIA</title>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body class="min-h-screen flex flex-col">
+        <header> 
+            {% include 'partials/header.html' %}
+        </header>
+        <main class="flex-grow">
+            <h1 class="text-3xl font-bold mb-6 text-center">Sobre Nós</h1>
+            <p class="text-lg p-4">
+                Bem-vindo à COMPIA . Nascemos da crença de que o conhecimento em Inteligência Artificial não deve ser um privilégio de poucos, 
+                mas uma ferramenta acessível a todos que desejam construir o futuro.
+            </p>
+            <p class="text-lg p-4">
+                Sabemos que o universo da IA pode parecer complexo e, por vezes, intimidador. Por isso, nossa missão é descomplicar o aprendizado. 
+                Somos uma curadoria especializada que vai além do papel: oferecemos livros técnicos aprofundados, ebooks práticos para aprendizado 
+                rápido e Kits completos que unem teoria e prática para você colocar a mão na massa.
+            </p>
+            <p class="text-lg p-4">
+                Seja você um estudante dando os primeiros passos, um profissional buscando requalificação ou um entusiasta da tecnologia, nosso 
+                acervo é pensado para iluminar o seu caminho. Na COMPIA , não vendemos apenas produtos; entregamos as ferramentas para você dominar a linguagem da próxima década.
+            </p>
+        </main>
+        <footer >
+                {% include 'partials/footer.html' %}
+        </footer>
+    </body>
+</html>

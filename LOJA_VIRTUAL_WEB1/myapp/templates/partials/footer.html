@@ -14,26 +14,17 @@
                     <p>
                     Loja Virtual COMPIA.
                     <br />
-                    Providing reliable tech since 1992
+                    Produtos de alta qualidade para inteligência artificial.
                     </p>
                 </aside>
                 <nav>
-                    <h6 class="footer-title">Services</h6>
-                    <a class="link link-hover">Branding</a>
-                    <a class="link link-hover">Design</a>
-                    <a class="link link-hover">Marketing</a>
-                    <a class="link link-hover">Advertisement</a>
-                </nav>
-                <nav>
                     <h6 class="footer-title">Company</h6>
-                    <a class="link link-hover">About us</a>
-                    <a class="link link-hover">Contact</a>
-                    <a class="link link-hover">Jobs</a>
-                    <a class="link link-hover">Press kit</a>
+                    <a href="{% url 'about_us' %}" class="link link-hover">Sobre nós</a>
+                    <a href="{% url 'contact' %}" class="link link-hover">Contato</a>
                 </nav>
                 <nav>
                     <h6 class="footer-title">Legal</h6>
-                    <a class="link link-hover">Terms of use</a>
-                    <a class="link link-hover">Privacy policy</a>
-                    <a class="link link-hover">Cookie policy</a>
+                    <a href="{% url 'use_terms' %}" class="link link-hover">Termos de Uso</a>
+                    <a href="{% url 'privacy_policy' %}" class="link link-hover">Política de Privacidade</a>
                 </nav>
+ </div>

@@ -8,11 +8,11 @@
         <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
-    <body>
+    <body class="min-h-screen flex flex-col">
         <header> 
             {% include 'partials/header.html' %}
         </header>
-          <main>
+        <main class="flex-grow">
             <h1 class="text-3xl font-bold mb-6">Produtos em Destaque</h1>
             <section id="cards" class="grid grid-cols-3 gap-6">
                <div class="card bg-base-100 w-96 shadow-sm">
@@ -24,9 +24,11 @@
                     <div class="card-body">
                         <h2 class="card-title">Inteligência Artificial Ampliada</h2>
                         <p>Livro sobre inteligência artificial e suas aplicações.</p>
-                        {% include 'partials/button_details.html' %}
+                        <button class="btn btn-primary">Comprar</button>
+                        {% include 'partials/car_button.html' %}
+                        <button class="btn btn-tertiary"><a href="{% url 'product' %}">Detalhes</a></button>
                     </div>
-                    </div>
+                </div>
                 <div class="card bg-base-100 w-96 shadow-sm">
                     <figure>
                         <img class="h-48 w-full object-cover"
@@ -36,9 +38,11 @@
                     <div class="card-body">
                         <h2 class="card-title">Ebook Principios da IA</h2>
                         <p>Conceitos básicos sobre IA e principios éticos</p>
-                        {% include 'partials/button_details.html' %}
+                        <button class="btn btn-primary">Comprar</button>
+                        {% include 'partials/car_button.html' %}
+                        <button class="btn btn-tertiary"><a>Detalhes</a></button>
                     </div>
-                    </div>
+                </div>
                  <div class="card bg-base-100 w-96 shadow-sm">
                     <figure>
                         <img class="h-48 w-full object-cover"
@@ -48,11 +52,11 @@
                     <div class="card-body">
                         <h2 class="card-title">Kit Inteligência Artificial</h2>
                         <p>Conjunto de materiais para aprendizado de IA para iniciante.</p>
-                        <div class="card-actions justify-end">
                         <button class="btn btn-primary">Comprar</button>
+                        {% include 'partials/car_button.html' %}
+                        <button class="btn btn-tertiary"><a>Detalhes</a></button>
                         </div>
-                    </div>
-                    </div>
+                </div>
             </section>
           </main>
             <footer >

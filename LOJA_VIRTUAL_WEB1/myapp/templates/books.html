@@ -8,11 +8,11 @@
         <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
-    <body>
+    <body class="min-h-screen flex flex-col">
         <header> 
             {% include 'partials/header.html' %}
         </header>
-        <main>
+        <main class="flex-grow">
            <section id="cards" class="grid grid-cols-3 gap-6">
                <div class="card bg-base-100 w-96 shadow-sm">
                     <figure>
