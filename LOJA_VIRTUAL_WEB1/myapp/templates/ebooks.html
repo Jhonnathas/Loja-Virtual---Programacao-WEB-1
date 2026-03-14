@@ -2,24 +2,24 @@
 <!doctype html>
 <html lang="pt-br">
     <head>
-       {% include 'partials/head.html' %}
+        <{% include 'partials/head.html' %}
     </head>
     <body class="min-h-screen flex flex-col">
         <header> 
             {% include 'partials/header.html' %}
         </header>
         <main class="flex-grow">
-            <h1 class="text-3xl font-bold mb-6 p-4">Livros</h1>
+            <h1 class="text-3xl font-bold mb-6 p-4">Ebooks</h1>
            <section id="cards" class="grid grid-cols-3 gap-6 p-4">
                <div class="card bg-base-100 w-96 shadow-sm">
                     <figure>
                         <img class="h-48 w-full object-cover"
-                        src= "{% static 'img/ia-ampliada_ebook_bf0d09cd-51af-4ad9-8a6d-5d4484627894_large.webp' %}"
+                        src= "{% static 'img/icone.jpeg' %}"
                         alt="Livro" />
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title">Inteligência Artificial Ampliada</h2>
-                        <p>Livro sobre inteligência artificial e suas aplicações.</p>
+                        <h2 class="card-title">Ebook Principios da IA</h2>
+                        <p>Conceitos básicos sobre IA e principios éticos.</p>
                         <button class="btn btn-primary">Comprar</button>
                         {% include 'partials/car_button.html' %}
                         <button class="btn btn-tertiary"><a href="{% url 'product' %}">Detalhes</a></button>
@@ -28,12 +28,12 @@
                 <div class="card bg-base-100 w-96 shadow-sm">
                     <figure>
                         <img class="h-48 w-full object-cover"
-                        src= "{% static 'img/CAPA_1000px_InteligenciaArtificialESuasAmbivalencias.webp' %}"
+                        src= "{% static 'img/9788576001263.jpg' %}"
                         alt="Livro" />
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title">Inteligência Artificial E Suas Ambivalências</h2>
-                        <p>Livro sobre inteligência artificial e suas aplicações e consequencias do seu uso.</p>
+                        <h2 class="card-title">Inteligência Artificial na Robótica</h2>
+                        <p>Conceitos de inteligência artificial para a Robótica.</p>
                         <button class="btn btn-primary">Comprar</button>
                         {% include 'partials/car_button.html' %}
                         <button class="btn btn-tertiary"><a href="{% url 'product' %}">Detalhes</a></button>
@@ -42,12 +42,12 @@
                  <div class="card bg-base-100 w-96 shadow-sm">
                     <figure>
                         <img class="h-48 w-full object-cover"
-                        src= "{% static 'img/611KRrdG7rL._AC_UF1000,1000_QL80_.jpg' %}"
+                        src= "{% static 'img/capa-ampliada.jpg' %}"
                         alt="Livro" />
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title">Redes Neurais</h2>
-                        <p>Abordagem Profunda sobre redes neurais.</p>
+                        <h2 class="card-title">IA para Microchips</h2>
+                        <p>Abordagem Profunda sobre como a Inteligência Artificial vai impactar nos Microchips.</p>
                         <button class="btn btn-primary">Comprar</button>
                         {% include 'partials/car_button.html' %}
                         <button class="btn btn-tertiary"><a href="{% url 'product' %}">Detalhes</a></button>
@@ -56,13 +56,12 @@
                 <div class="card bg-base-100 w-96 shadow-sm">
                     <figure>
                         <img class="h-48 w-full object-cover"
-                        src= "{% static 'img/Inteligencia-Artificial.jpg' %}"
+                        src= "{% static 'img/images2.jpeg' %}"
                         alt="Livro" />
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title">Inteligencia Artificial Segundo Turing </h2>
-                        <p>O que o pai da Computação pensava sobre IA. Uma abordagem teórica e prática, conceitos classicos 
-                        e modernos</p>
+                        <h2 class="card-title">Visão Humanizada da Inteligencia Artificial</h2>
+                        <p>Este Ebook aborda a IA sobre uma optica diferente, uma visão humana sobre a máquina.</p>
                         <button class="btn btn-primary">Comprar</button>
                         {% include 'partials/car_button.html' %}
                         <button class="btn btn-tertiary"><a href="{% url 'product' %}">Detalhes</a></button>

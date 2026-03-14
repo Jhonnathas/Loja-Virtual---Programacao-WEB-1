@@ -11,4 +11,7 @@ urlpatterns = [
     path("contact/", views.contact, name='contact'),
     path("use_terms/", views.use_terms, name='use_terms'),
     path("privacy_policy/", views.privacy_policy, name='privacy_policy'),
+    path("ebooks/", views.ebooks, name='ebooks'),
+    path("kit_avancado/", views.kit_avancado, name='kit_avancado'),
+    path("kit_iniciante/", views.kit_iniciante, name='kit_iniciante'),
 ]

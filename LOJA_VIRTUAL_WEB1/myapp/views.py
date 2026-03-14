@@ -27,3 +27,12 @@ def use_terms(request):
 
 def privacy_policy(request):
     return render(request, 'privacy_policy.html')
+
+def ebooks(request):
+    return render(request, 'ebooks.html')
+
+def kit_avancado(request):
+    return render(request, 'kit_avancado.html')
+
+def kit_iniciante(request):
+    return render(request, 'kit_iniciante.html')
